@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+#se define la ruta del archivo
 df_movies = pd.read_csv("Data/Rotten Tomatoes Movies.csv")
 print(df_movies.head())
 
@@ -22,10 +23,10 @@ print(distribucion_de_calificaciones)
 # se crea el gráfico circular
 plt.figure(figsize=(6, 6))
 distribucion_de_calificaciones.plot.pie(
-    startangle=140,# Empieza desde arriba
-    labels=distribucion_de_calificaciones.index,     # Etiquetas de cada sección
-    shadow=False,                                 # Sin sombra (efecto 3D)
-    autopct=None                                  # No mostrar porcentajes dentro del pastel
+    startangle=140,
+    labels=distribucion_de_calificaciones.index,
+    shadow=False, # Sin sombra (efecto 3D)
+    autopct=None  # No mostrar porcentajes dentro del pastel
 )
 
 plt.title('Distribución de calificación por la crítica')

@@ -1,4 +1,3 @@
-# 1. Importación de librerias
 import pandas as pd
 import matplotlib.pyplot as plt
 
